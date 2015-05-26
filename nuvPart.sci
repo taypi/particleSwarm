@@ -1,7 +1,8 @@
-function [minimo, xm, ym] = nuvem();
-	nInd = 50;
-	c1 = 2.0;
-	c2 = 2.0;
+function [minimo] = nuvem();
+    clear;  
+   	nInd = 50;
+	c1 = 2;
+	c2 = 1;
 	[x,p,v] = popInicial(nInd);
     for k=1:50
         for i=1:nInd
@@ -29,6 +30,6 @@ function [minimo, xm, ym] = nuvem();
 			end
 		end
 	end
-    [minimo, xm, ym] = valores(x(1:nInd,1),x(1:nInd,2));
+    [minimo(1,1), minimo(1,2), minimo(1,3)] = valores(x(1:nInd,1),x(1:nInd,2));
 endfunction
  

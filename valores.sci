@@ -5,6 +5,6 @@ function [minimo, xm, ym] = valores(x,y);
 
 	w = x.*z;
     [minimo, indice] = min(w);
-    xm = x(indice);
-    ym = y(indice);
+    xm = x(indice)*250;
+    ym = y(indice)*250;
 endfunction
