@@ -6,7 +6,7 @@ function [minimo] = nuvem();
 	[x,p,v] = popInicial(nInd);
     for k=1:50
         for i=1:nInd
-	        if funcao(x(i,1),x(i,2)) < funcao(p(i,1),p(i,2)) then
+	        if funcao(x(i,1),x(i,2)) < funcao(p(i,1),p(i,2))
 	            p(i,1:2) = x(i,:);
 	        end
 	        if i == 1 | funcao(x(i,1),x(i,2)) < funcao(g(1,1),g(1,2))

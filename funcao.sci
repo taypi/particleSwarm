@@ -1,10 +1,7 @@
-function [w, minimo, xm, ym] = funcao(x,y);
+function [w] = funcao(x,y);
 	z = -x.*sin(sqrt(abs(x)))-y.*sin(sqrt(abs(y)));
 	x = x/250;
 	y = y/250;
 
 	w = x.*z;
-    [minimo, indice] = min(w);
-    xm = x(indice);
-    ym = y(indice);
 endfunction
